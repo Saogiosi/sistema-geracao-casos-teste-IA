@@ -104,7 +104,19 @@ flowchart TB
 9.2 Diagrama comportamental
 A jornada crítica escolhida para representação comportamental será:
 Geração de casos de teste a partir de um requisito de software.
-O diagrama de sequência será incluído nesta seção após a etapa de geração e revisão com auxílio de IA Generativa.
+```sequenceDiagram
+    actor QA as Profissional de QA
+    participant WEB as Interface Web
+    participant MANAGER as Gerenciador de Casos de Teste
+    participant AI as Serviço de IA Generativa
+    QA->>WEB: Informa requisito de software
+    WEB->>MANAGER: Envia requisito
+    MANAGER->>AI: Solicita geração de casos
+    AI-->>MANAGER: Retorna casos sugeridos
+    MANAGER->>WEB: Envia casos estruturados
+    WEB-->>QA: Exibe casos para revisão
+    QA->>WEB: Revisa e valida sugestões
+```
 10. Uso de IA Generativa
 A IA Generativa será utilizada como ferramenta de apoio à documentação arquitetural.
 Inicialmente, será utilizada para gerar propostas de diagramas em Mermaid a partir da descrição do sistema.
