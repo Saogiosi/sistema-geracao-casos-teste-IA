@@ -1,0 +1,4 @@
+CONSIDERAÇÕES FINAIS
+A utilização da IA Generativa contribuiu para a identificação inicial dos principais componentes, responsabilidades e fluxos do sistema TestCase AI. Os diagramas gerados apresentaram uma boa representação inicial da solução, porém foi necessária uma análise crítica para ajustar as fronteiras dos componentes e evitar a inclusão de funcionalidades não definidas no escopo.
+Após os ajustes, os diagramas ficaram alinhados às decisões estabelecidas durante o discovery, mantendo a IA como serviço externo e a validação dos casos de teste sob responsabilidade do profissional de QA.
+O resultado demonstrou que a IA Generativa pode apoiar a documentação arquitetural, mas suas sugestões precisam ser revisadas e validadas para evitar decisões arquiteturais não estabelecidas.
