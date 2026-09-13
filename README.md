@@ -100,6 +100,7 @@ flowchart TB
     AI -->|"Retorna casos sugeridos"| MANAGER
     MANAGER -->|"Apresenta resultados"| WEB
     WEB -->|"Exibe casos para revisão"| QA
+```
 9.2 Diagrama comportamental
 A jornada crítica escolhida para representação comportamental será:
 Geração de casos de teste a partir de um requisito de software.
