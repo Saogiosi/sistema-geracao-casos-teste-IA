@@ -124,13 +124,11 @@ Inicialmente, será utilizada para gerar propostas de diagramas em Mermaid a par
 Os resultados gerados serão analisados criticamente e poderão ser modificados para garantir aderência ao escopo, às responsabilidades e às restrições definidas neste documento.
 A IA será considerada uma ferramenta de apoio e não como autoridade sobre as decisões arquiteturais do sistema.
 11. Decisões e ajustes realizados
-Esta seção registrará as decisões tomadas durante a análise dos resultados produzidos pela IA Generativa.
-Serão documentados:
-componentes adicionados ou removidos;
-responsabilidades corrigidas;
-integrações inferidas indevidamente;
-alterações realizadas nos diagramas;
-decisões arquiteturais tomadas durante a revisão.
+A primeira versão do diagrama estrutural foi gerada com auxílio de IA Generativa a partir da descrição do sistema.
+Na revisão, foram analisados os elementos identificados pelo modelo e sua relação com o escopo definido na documentação.
+Foi decidido representar o Serviço de IA Generativa como um componente externo ao sistema TestCase AI, pois a documentação estabelece que a IA será consumida como um serviço externo.
+Também foi mantida a separação entre a Interface Web e o Gerenciador de Casos de Teste, permitindo representar claramente suas responsabilidades.
+Foram evitados componentes que não fazem parte do escopo atual, como banco de dados, autenticação e integrações com ferramentas de gestão de testes ou projetos.
 12. O que a IA inferiu corretamente
 A IA Generativa inferiu corretamente os principais elementos necessários para representar o funcionamento do sistema.
 Entre os pontos identificados corretamente estão:
