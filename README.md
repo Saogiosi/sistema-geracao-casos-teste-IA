@@ -142,7 +142,16 @@ Entre os pontos identificados corretamente estão:
 - A necessidade de apresentar os resultados ao profissional de QA para revisão e validação;
 - A separação de responsabilidades entre o sistema TestCase AI e o serviço externo de IA.
 13. O que precisou ser ajustado
-Nesta seção serão registrados os elementos que foram incorretamente inferidos ou representados pela IA e que precisaram ser corrigidos.
+Durante a revisão dos diagramas gerados com auxílio de IA Generativa, foi necessário realizar alguns ajustes para garantir que a representação estivesse de acordo com o escopo e as decisões definidas para o sistema.
+O principal ajuste realizado foi a definição mais clara das fronteiras e responsabilidades dos componentes.
+A versão revisada deixou explícito que:
+- o Serviço de IA Generativa é um componente externo ao sistema de geração de casos de teste com AI;
+- a Interface Web é responsável pela interação com o profissional de QA;
+- o Gerenciador de Casos de Teste é responsável por receber e processar o requisito, coordenar a solicitação ao serviço de IA e organizar o retorno;
+- a IA Generativa possui a responsabilidade de sugerir casos de teste, mas não de aprová-los ou validá-los;
+- a revisão e validação final dos casos continuam sendo responsabilidade do profissional de QA.
+Também foi necessário evitar a inclusão de componentes ou funcionalidades que não haviam sido definidos durante o discovery, como banco de dados, autenticação, integração com ferramentas externas ou execução automática dos testes.
+Esses ajustes foram realizados para evitar que decisões arquiteturais fossem inferidas sem terem sido previamente documentadas.
 14. O que ainda seria necessário para um agente implementar o sistema
 Para que um agente de desenvolvimento consiga implementar o sistema sem precisar inventar decisões, seria necessário complementar a documentação com informações como:
 requisitos funcionais detalhados;
