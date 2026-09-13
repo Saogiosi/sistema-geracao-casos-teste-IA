@@ -104,7 +104,8 @@ flowchart TB
 9.2 Diagrama comportamental
 A jornada crítica escolhida para representação comportamental será:
 Geração de casos de teste a partir de um requisito de software.
-```sequenceDiagram
+```mermaid
+sequenceDiagram
     actor QA as Profissional de QA
     participant WEB as Interface Web
     participant MANAGER as Gerenciador de Casos de Teste
@@ -119,10 +120,10 @@ Geração de casos de teste a partir de um requisito de software.
     QA->>WEB: Revisa e valida sugestões
 ```
 10. Uso de IA Generativa
-A IA Generativa será utilizada como ferramenta de apoio à documentação arquitetural.
-Inicialmente, será utilizada para gerar propostas de diagramas em Mermaid a partir da descrição do sistema.
-Os resultados gerados serão analisados criticamente e poderão ser modificados para garantir aderência ao escopo, às responsabilidades e às restrições definidas neste documento.
-A IA será considerada uma ferramenta de apoio e não como autoridade sobre as decisões arquiteturais do sistema.
+A IA Generativa foi utilizada como ferramenta de apoio à documentação arquitetural.
+Inicialmente, foi utilizada para gerar propostas de diagramas em Mermaid a partir da descrição do sistema.
+Os resultados gerados foram analisados criticamente e modificados quando necessário para garantir aderência ao escopo, às responsabilidades e às restrições definidas neste documento.
+A IA foi considerada uma ferramenta de apoio e não como autoridade sobre as decisões arquiteturais do sistema.
 11. Decisões e ajustes realizados
 A primeira versão do diagrama estrutural foi gerada com auxílio de IA Generativa a partir da descrição do sistema.
 Na revisão, foram analisados os elementos identificados pelo modelo e sua relação com o escopo definido na documentação.
@@ -166,5 +167,7 @@ critérios de testes;
 regras para avaliação dos casos de teste gerados.
 15. Conclusão
 O TestCase AI demonstra como a utilização de Inteligência Artificial Generativa pode ser combinada com a abordagem Diagrams as Code para apoiar a documentação e o discovery de um sistema de software.
-A documentação busca manter explícitos o escopo, as responsabilidades, as restrições e as lacunas do sistema, permitindo que os diagramas sejam revisados e versionados junto com a documentação.
-A análise crítica dos resultados gerados pela IA é parte fundamental do processo, uma vez que o modelo pode inferir componentes ou decisões que não foram estabelecidos durante o discovery.
+Durante o processo, os diagramas gerados com auxílio de IA foram analisados criticamente e ajustados para garantir aderência ao escopo, às responsabilidades e às restrições definidas na documentação.
+A documentação mantém explícitas as decisões arquiteturais, os componentes do sistema, suas responsabilidades, as integrações previstas e as principais lacunas que ainda precisam ser definidas antes de uma eventual implementação.
+A análise crítica dos resultados gerados pela IA é parte fundamental do processo, uma vez que o modelo pode inferir componentes, responsabilidades ou integrações que não foram estabelecidos durante o discovery.
+Dessa forma, a IA Generativa foi utilizada como ferramenta de apoio à análise e à documentação, enquanto as decisões arquiteturais permaneceram sob responsabilidade humana.
