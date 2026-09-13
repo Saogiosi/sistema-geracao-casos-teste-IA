@@ -85,7 +85,21 @@ Essas lacunas deverão ser resolvidas antes de uma eventual implementação do s
 9. Arquitetura
 A arquitetura será documentada utilizando a abordagem Diagrams as Code, com diagramas escritos em Mermaid.
 9.1 Diagrama estrutural
-O diagrama estrutural será incluído nesta seção após a etapa de geração e revisão com auxílio de IA Generativa.
+O diagrama abaixo apresenta uma visão estrutural do TestCase AI, inspirada no modelo C4, destacando os principais containers do sistema e sua integração com o serviço externo de IA Generativa.
+```mermaid
+flowchart TB
+    QA["Profissional de QA"]
+    subgraph TCAI["TestCase AI"]
+        WEB["Interface Web<br/>Interface de interação com o QA"]
+        MANAGER["Gerenciador de Casos de Teste<br/>Processa requisitos e coordena a geração"]
+    end
+    AI["Serviço de IA Generativa<br/>Serviço externo"]
+    QA -->|"Informa requisito / solicita geração"| WEB
+    WEB -->|"Envia requisito"| MANAGER
+    MANAGER -->|"Solicita geração de casos"| AI
+    AI -->|"Retorna casos sugeridos"| MANAGER
+    MANAGER -->|"Apresenta resultados"| WEB
+    WEB -->|"Exibe casos para revisão"| QA
 9.2 Diagrama comportamental
 A jornada crítica escolhida para representação comportamental será:
 Geração de casos de teste a partir de um requisito de software.
