@@ -109,6 +109,7 @@ Geração de casos de teste a partir de um requisito de software.
     participant WEB as Interface Web
     participant MANAGER as Gerenciador de Casos de Teste
     participant AI as Serviço de IA Generativa
+
     QA->>WEB: Informa requisito de software
     WEB->>MANAGER: Envia requisito
     MANAGER->>AI: Solicita geração de casos
@@ -131,7 +132,15 @@ integrações inferidas indevidamente;
 alterações realizadas nos diagramas;
 decisões arquiteturais tomadas durante a revisão.
 12. O que a IA inferiu corretamente
-Nesta seção serão registrados os elementos identificados corretamente pela IA Generativa durante a elaboração dos diagramas.
+A IA Generativa inferiu corretamente os principais elementos necessários para representar o funcionamento do sistema.
+Entre os pontos identificados corretamente estão:
+- A existência do profissional de QA como principal usuário do sistema;
+- A necessidade de uma interface para receber o requisito de software;
+- A existência de um componente responsável por processar o requisito e coordenar a geração dos casos de teste;
+- A utilização de um Serviço de IA Generativa externo para analisar o requisito e sugerir os casos de teste;
+- O retorno dos casos gerados para o sistema;
+- A necessidade de apresentar os resultados ao profissional de QA para revisão e validação;
+- A separação de responsabilidades entre o sistema TestCase AI e o serviço externo de IA.
 13. O que precisou ser ajustado
 Nesta seção serão registrados os elementos que foram incorretamente inferidos ou representados pela IA e que precisaram ser corrigidos.
 14. O que ainda seria necessário para um agente implementar o sistema
